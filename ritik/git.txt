@@ -1,0 +1,41 @@
+-----GIT COMMANDS-----
+-> git --version : to check the version
+-> git init : intialises git in the current repository.
+-> git config --global user.name : sets the current repository name.
+-> git config --global user.name/email "   " : changes global username/email. For local repo dont use global.
+-> git mkdir : make directory
+-> git cd : jump into that directory
+-> touch : create a file
+-> ls : lists all the file in that directory
+-> git status : gives status of the history of the file , i.e files which have been tracked , which have been deleted etc
+
+FILES IN THE DIRECTORY CAN BE OF TWO TYPES :
+UNTRACKED FILES : The files which are in the directory but git doesnt make any track of it. They are in the 
+	            working directory but not in the repository.
+TRACKED FILES : GIT knows about the file and they are added in the repository.Initially all files are untrakced.For git to track
+ 			them we need to stage them or add them to the staging area
+  			using the command add <file name>.
+As you are working, you may be adding, editing and removing files. But whenever you hit a milestone or finish a part of the work,
+			you should add the files to a Staging Environment.
+-> git add --all/A : command to add all files in the current directory  
+-> git status --short :to see the status of the files in a short way,
+				?? - Untracked files
+   				A - Files added to stage
+				M - Modified files
+				D - Deleted files              
+-> git commit -m "MESSAGE".
+Sometimes, when you make small changes, using the staging environment seems like a waste of time. It is possible to commit changes
+directly, skipping the staging environment. The -a option will automatically stage every changed, already tracked file.
+
+-> git log : To view the history of the commits of the repository
+-> git command -help -  See all the available options for the specific command
+-> git help --all -  See all possible commands
+If you find yourself stuck in the list view, SHIFT + G to jump the end of the list, then q to exit the view.
+
+-> git branch <branchname> : creates a new branch with the branch name
+-> git brancg : shows all the available branches
+-> git checkout <branchname> : switches us to the specified branch.
+-> git checkout -b <branchname> : will create a new branch and switch it to that new branch.
+-> git merge <branchname> : merges the branch with master branch
+-> git branch -d <branchname> : deletes the branch
+-> 
